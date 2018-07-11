@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		351CED5420F008EA00118382 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CED5320F008EA00118382 /* main.m */; };
+		351CED5D20F0094200118382 /* MMCContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CED5C20F0094200118382 /* MMCContainer.m */; };
+		351CED6420F00C7D00118382 /* MMCInMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CED6320F00C7D00118382 /* MMCInMemoryStorage.m */; };
+		351CED6720F0108900118382 /* MMCPolicyLRU.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CED6620F0108900118382 /* MMCPolicyLRU.m */; };
+		351CED6A20F0182D00118382 /* MMCPolicyLFU.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CED6920F0182D00118382 /* MMCPolicyLFU.m */; };
+		351CED6E20F0194900118382 /* MMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CED6D20F0194900118382 /* MMCache.m */; };
+		351CED7120F01D7000118382 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CED7020F01D7000118382 /* Dog.m */; };
+		351CED7420F01D7D00118382 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CED7320F01D7D00118382 /* Cat.m */; };
+		351CED7720F01D8900118382 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CED7620F01D8900118382 /* Pet.m */; };
+		351CED7A20F028F000118382 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CED7820F028F000118382 /* NSString+MD5.m */; };
+		351CED8120F0313400118382 /* MMCPolicyFIFO.m in Sources */ = {isa = PBXBuildFile; fileRef = 351CED8020F0313400118382 /* MMCPolicyFIFO.m */; };
+		359CA4F920F0B8A5002B3FF2 /* Dog+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 359CA4F820F0B8A5002B3FF2 /* Dog+NSCoding.m */; };
+		7311785E20F216AD00F96A96 /* Cat+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7311785D20F216AD00F96A96 /* Cat+NSCoding.m */; };
+		7311786420F21AD100F96A96 /* MMCPersistentStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7311786320F21AD100F96A96 /* MMCPersistentStorage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		351CED4E20F008EA00118382 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		351CED5020F008EA00118382 /* MMCache */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MMCache; sourceTree = BUILT_PRODUCTS_DIR; };
+		351CED5320F008EA00118382 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		351CED5B20F0094200118382 /* MMCContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCContainer.h; sourceTree = "<group>"; };
+		351CED5C20F0094200118382 /* MMCContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCContainer.m; sourceTree = "<group>"; };
+		351CED5F20F00B5500118382 /* MMCStorageProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCStorageProtocol.h; sourceTree = "<group>"; };
+		351CED6220F00C7D00118382 /* MMCInMemoryStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCInMemoryStorage.h; sourceTree = "<group>"; };
+		351CED6320F00C7D00118382 /* MMCInMemoryStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCInMemoryStorage.m; sourceTree = "<group>"; };
+		351CED6520F0108900118382 /* MMCPolicyLRU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCPolicyLRU.h; sourceTree = "<group>"; };
+		351CED6620F0108900118382 /* MMCPolicyLRU.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCPolicyLRU.m; sourceTree = "<group>"; };
+		351CED6820F0182D00118382 /* MMCPolicyLFU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCPolicyLFU.h; sourceTree = "<group>"; };
+		351CED6920F0182D00118382 /* MMCPolicyLFU.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCPolicyLFU.m; sourceTree = "<group>"; };
+		351CED6B20F0187500118382 /* MMCPolicyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCPolicyProtocol.h; sourceTree = "<group>"; };
+		351CED6C20F0194900118382 /* MMCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCache.h; sourceTree = "<group>"; };
+		351CED6D20F0194900118382 /* MMCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCache.m; sourceTree = "<group>"; };
+		351CED6F20F01D7000118382 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		351CED7020F01D7000118382 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		351CED7220F01D7D00118382 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		351CED7320F01D7D00118382 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		351CED7520F01D8900118382 /* Pet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
+		351CED7620F01D8900118382 /* Pet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
+		351CED7820F028F000118382 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		351CED7920F028F000118382 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		351CED7F20F0313400118382 /* MMCPolicyFIFO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCPolicyFIFO.h; sourceTree = "<group>"; };
+		351CED8020F0313400118382 /* MMCPolicyFIFO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCPolicyFIFO.m; sourceTree = "<group>"; };
+		359CA4F720F0B8A5002B3FF2 /* Dog+NSCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dog+NSCoding.h"; sourceTree = "<group>"; };
+		359CA4F820F0B8A5002B3FF2 /* Dog+NSCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Dog+NSCoding.m"; sourceTree = "<group>"; };
+		359CA4FA20F0B95A002B3FF2 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		7311785C20F216AD00F96A96 /* Cat+NSCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cat+NSCoding.h"; sourceTree = "<group>"; };
+		7311785D20F216AD00F96A96 /* Cat+NSCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Cat+NSCoding.m"; sourceTree = "<group>"; };
+		7311786220F21AD100F96A96 /* MMCPersistentStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCPersistentStorage.h; sourceTree = "<group>"; };
+		7311786320F21AD100F96A96 /* MMCPersistentStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCPersistentStorage.m; sourceTree = "<group>"; };
+		7311786820F224C400F96A96 /* MMCache-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMCache-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		351CED4D20F008EA00118382 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		351CED4720F008EA00118382 = {
+			isa = PBXGroup;
+			children = (
+				351CED5220F008EA00118382 /* MMCache */,
+				351CED5120F008EA00118382 /* Products */,
+				7311786820F224C400F96A96 /* MMCache-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		351CED5120F008EA00118382 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				351CED5020F008EA00118382 /* MMCache */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		351CED5220F008EA00118382 /* MMCache */ = {
+			isa = PBXGroup;
+			children = (
+				351CED5A20F0091000118382 /* scr */,
+				351CED5320F008EA00118382 /* main.m */,
+				351CED7E20F02C7600118382 /* Test */,
+			);
+			path = MMCache;
+			sourceTree = "<group>";
+		};
+		351CED5A20F0091000118382 /* scr */ = {
+			isa = PBXGroup;
+			children = (
+				351CED7C20F02BC900118382 /* Utils */,
+				351CED7B20F02BBD00118382 /* Storage */,
+				351CED7D20F02BD500118382 /* Policy */,
+				351CED5B20F0094200118382 /* MMCContainer.h */,
+				351CED5C20F0094200118382 /* MMCContainer.m */,
+				351CED6C20F0194900118382 /* MMCache.h */,
+				351CED6D20F0194900118382 /* MMCache.m */,
+			);
+			path = scr;
+			sourceTree = "<group>";
+		};
+		351CED7B20F02BBD00118382 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				351CED5F20F00B5500118382 /* MMCStorageProtocol.h */,
+				351CED6220F00C7D00118382 /* MMCInMemoryStorage.h */,
+				351CED6320F00C7D00118382 /* MMCInMemoryStorage.m */,
+				7311786220F21AD100F96A96 /* MMCPersistentStorage.h */,
+				7311786320F21AD100F96A96 /* MMCPersistentStorage.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		351CED7C20F02BC900118382 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				351CED7920F028F000118382 /* NSString+MD5.h */,
+				351CED7820F028F000118382 /* NSString+MD5.m */,
+				359CA4FA20F0B95A002B3FF2 /* Macro.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		351CED7D20F02BD500118382 /* Policy */ = {
+			isa = PBXGroup;
+			children = (
+				351CED6B20F0187500118382 /* MMCPolicyProtocol.h */,
+				351CED6520F0108900118382 /* MMCPolicyLRU.h */,
+				351CED6620F0108900118382 /* MMCPolicyLRU.m */,
+				351CED6820F0182D00118382 /* MMCPolicyLFU.h */,
+				351CED6920F0182D00118382 /* MMCPolicyLFU.m */,
+				351CED7F20F0313400118382 /* MMCPolicyFIFO.h */,
+				351CED8020F0313400118382 /* MMCPolicyFIFO.m */,
+			);
+			path = Policy;
+			sourceTree = "<group>";
+		};
+		351CED7E20F02C7600118382 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				351CED6F20F01D7000118382 /* Dog.h */,
+				351CED7020F01D7000118382 /* Dog.m */,
+				351CED7220F01D7D00118382 /* Cat.h */,
+				351CED7320F01D7D00118382 /* Cat.m */,
+				351CED7520F01D8900118382 /* Pet.h */,
+				351CED7620F01D8900118382 /* Pet.m */,
+				7311785C20F216AD00F96A96 /* Cat+NSCoding.h */,
+				7311785D20F216AD00F96A96 /* Cat+NSCoding.m */,
+				359CA4F720F0B8A5002B3FF2 /* Dog+NSCoding.h */,
+				359CA4F820F0B8A5002B3FF2 /* Dog+NSCoding.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		351CED4F20F008EA00118382 /* MMCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 351CED5720F008EA00118382 /* Build configuration list for PBXNativeTarget "MMCache" */;
+			buildPhases = (
+				351CED4C20F008EA00118382 /* Sources */,
+				351CED4D20F008EA00118382 /* Frameworks */,
+				351CED4E20F008EA00118382 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMCache;
+			productName = MMCache;
+			productReference = 351CED5020F008EA00118382 /* MMCache */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		351CED4820F008EA00118382 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = leon;
+				TargetAttributes = {
+					351CED4F20F008EA00118382 = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 351CED4B20F008EA00118382 /* Build configuration list for PBXProject "MMCache" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 351CED4720F008EA00118382;
+			productRefGroup = 351CED5120F008EA00118382 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				351CED4F20F008EA00118382 /* MMCache */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		351CED4C20F008EA00118382 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351CED7420F01D7D00118382 /* Cat.m in Sources */,
+				351CED5420F008EA00118382 /* main.m in Sources */,
+				7311785E20F216AD00F96A96 /* Cat+NSCoding.m in Sources */,
+				351CED7A20F028F000118382 /* NSString+MD5.m in Sources */,
+				351CED6720F0108900118382 /* MMCPolicyLRU.m in Sources */,
+				351CED7720F01D8900118382 /* Pet.m in Sources */,
+				351CED6A20F0182D00118382 /* MMCPolicyLFU.m in Sources */,
+				351CED8120F0313400118382 /* MMCPolicyFIFO.m in Sources */,
+				7311786420F21AD100F96A96 /* MMCPersistentStorage.m in Sources */,
+				359CA4F920F0B8A5002B3FF2 /* Dog+NSCoding.m in Sources */,
+				351CED5D20F0094200118382 /* MMCContainer.m in Sources */,
+				351CED7120F01D7000118382 /* Dog.m in Sources */,
+				351CED6E20F0194900118382 /* MMCache.m in Sources */,
+				351CED6420F00C7D00118382 /* MMCInMemoryStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		351CED5520F008EA00118382 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		351CED5620F008EA00118382 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		351CED5820F008EA00118382 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y4H99539F;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MMCache-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		351CED5920F008EA00118382 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y4H99539F;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MMCache-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		351CED4B20F008EA00118382 /* Build configuration list for PBXProject "MMCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				351CED5520F008EA00118382 /* Debug */,
+				351CED5620F008EA00118382 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		351CED5720F008EA00118382 /* Build configuration list for PBXNativeTarget "MMCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				351CED5820F008EA00118382 /* Debug */,
+				351CED5920F008EA00118382 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 351CED4820F008EA00118382 /* Project object */;
+}
