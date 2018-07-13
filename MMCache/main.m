@@ -10,6 +10,7 @@
 #import "MMCache.h"
 #import "Cat+NSCoding.h"
 #import "Dog+NSCoding.h"
+#import "MMCPersistentStorage.h"
 
 #define CACHE MMCache.sharedCache
 
@@ -32,11 +33,11 @@ Dog *RandomDog(void) {
 }
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
         CACHE.storageType = MMCStorageTypePersistent;
-        CACHE.policyType = MMCPolicyTypeFIFO;
-        CACHE.capacity = 10000;
-
+        CACHE.policyType = MMCPolicyTypeLFU;
+        CACHE.capacity = 1;
+        MMCPersistentStorage *a = MMCPersistentStorage.new;
+        [a createTable];
         for (NSInteger i = 0; i < 10000; i++) {
             [CACHE saveObject:RandomDog()];
         }
@@ -69,6 +70,6 @@ int main(int argc, const char * argv[]) {
 
         NSLog(@"");
         
-    }
+
     return 0;
 }

@@ -14,9 +14,10 @@
 
 -(sqlite3*)openDB;
 -(void)createTable;
--(NSString*)stringFromDate:(NSDate*)date;
 -(void)dropTable;
--(NSDate*)dateFromString:(NSString*)string;
 -(void)countPlus:(NSString*)id andAccessCount:(int)accessCount;
+- (NSDate *)getDateTimeFromMilliSeconds: (int) leftHalf andRightHalf: (int)rightHalf;
+- (int)getDateTimeTOMilliSeconds:(NSDate *)datetime andRightHalf:(int *)rightHalf;
+- (void)showTable;
 
 @end

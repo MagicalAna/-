@@ -44,10 +44,11 @@
 }
 
 
-- (void)setStorageType/*:(MMCStorageType)storageType*/ {
-    switch (_storageType) {
+- (void)setStorageType:(MMCStorageType)storageType {
+    _storage = nil;
+    switch (storageType) {
         case MMCStorageTypeInMemory: {
-            _storage = MMCInMemoryStorage.new;
+            //_storage = MMCInMemoryStorage.new;
             break;
         }
         case MMCStorageTypePersistent:{
