@@ -21,6 +21,7 @@
 		359CA4F920F0B8A5002B3FF2 /* Dog+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 359CA4F820F0B8A5002B3FF2 /* Dog+NSCoding.m */; };
 		7311785E20F216AD00F96A96 /* Cat+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7311785D20F216AD00F96A96 /* Cat+NSCoding.m */; };
 		7311786420F21AD100F96A96 /* MMCPersistentStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7311786320F21AD100F96A96 /* MMCPersistentStorage.m */; };
+		7361299D20FAF64100914A5F /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 7361299C20FAF64100914A5F /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +69,8 @@
 		7311786220F21AD100F96A96 /* MMCPersistentStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCPersistentStorage.h; sourceTree = "<group>"; };
 		7311786320F21AD100F96A96 /* MMCPersistentStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCPersistentStorage.m; sourceTree = "<group>"; };
 		7311786820F224C400F96A96 /* MMCache-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMCache-Bridging-Header.h"; sourceTree = "<group>"; };
+		7361299B20FAF64100914A5F /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		7361299C20FAF64100914A5F /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				351CED6320F00C7D00118382 /* MMCInMemoryStorage.m */,
 				7311786220F21AD100F96A96 /* MMCPersistentStorage.h */,
 				7311786320F21AD100F96A96 /* MMCPersistentStorage.m */,
+				7361299B20FAF64100914A5F /* Test.h */,
+				7361299C20FAF64100914A5F /* Test.m */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7361299D20FAF64100914A5F /* Test.m in Sources */,
 				351CED7420F01D7D00118382 /* Cat.m in Sources */,
 				351CED5420F008EA00118382 /* main.m in Sources */,
 				7311785E20F216AD00F96A96 /* Cat+NSCoding.m in Sources */,
