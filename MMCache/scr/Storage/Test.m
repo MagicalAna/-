@@ -30,7 +30,7 @@
 - (void)testSaveObject {
     MMCPersistentStorage *a = MMCPersistentStorage.new;
     Dog *dog1 = [Dog dogWithName:@"billy" age:2 breed:@"Husky"];
-    [CACHE saveObject:dog1];
+    [CACHE saveObject:dog1 name:dog1.name];
     [a showTable];
 }
 
@@ -59,9 +59,9 @@
     MMCPersistentStorage *a = MMCPersistentStorage.new;
     [a purify];
     Dog *dog1 = [Dog dogWithName:@"billy" age:2 breed:@"Husky"];
-    [CACHE saveObject:dog1];
+    [CACHE saveObject:dog1 name:dog1.name];
     Dog *dog2 = [Dog dogWithName:@"lucas" age:3 breed:@"Barbet"];
-    [CACHE saveObject:dog2];
+    [CACHE saveObject:dog2 name:dog2.name];
     [a showTable];
     NSLog(@"%@", [a allIds]);
 }

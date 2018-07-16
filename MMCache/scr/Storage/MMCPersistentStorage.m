@@ -64,7 +64,7 @@ static int callback3(void *NotUsed, int argc, char **argv, char **azColName) {
         "access_time    text    not null," \
         "level          int     not null," \
         "duration       int     not null," \
-        "access_count    int     not null);";
+        "access_count   int     not null);";
     
         rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
         if( rc != SQLITE_OK ) {
@@ -222,7 +222,8 @@ static int callback3(void *NotUsed, int argc, char **argv, char **azColName) {
             if (sqlite3_step(stament) == SQLITE_DONE) {
                 NSLog(@"in ok");
             } else {
-                NSLog(@"%s",sqlite3_errmsg(db));
+                //NSLog(@"%s",sqlite3_errmsg(db));
+                NSLog(@"重复名字，输入失败");
             }
         }
         sqlite3_close(db);
@@ -444,7 +445,7 @@ static int callback3(void *NotUsed, int argc, char **argv, char **azColName) {
     sqlite3 *db = [self openDB];
     char *zErrMsg = 0;
     int rc;
-    char *sql = "SELECT id FROM object";
+    char *sql = "SELECT id FROM object ORDER BY added_time";
     rc = sqlite3_exec(db, sql, callback3, nil, &zErrMsg);
     if( rc != SQLITE_OK ){
         fprintf(stderr, "SQL error: %s\n", zErrMsg);

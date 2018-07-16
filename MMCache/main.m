@@ -35,38 +35,38 @@ Dog *RandomDog(void) {
 int main(int argc, const char * argv[]) {
         CACHE.storageType = MMCStorageTypePersistent;
         CACHE.policyType = MMCPolicyTypeLFU;
-        CACHE.capacity = 10;
-        for (NSInteger i = 0; i < 11; i++) {
-            [CACHE saveObject:RandomDog()];
-        }
+        CACHE.capacity = 10000;
+        /*for (NSInteger i = 0; i < 10000; i++) {
+         Dog *randomDog = RandomDog();
+         [CACHE saveObject: randomDog name: randomDog.name];
+        }*/
         /*for (NSInteger i = 0; i < 1000; i++) {
             NSInteger index = arc4random_uniform((int)allIds.count);
             [CACHE objectForId:allIds[index]];
-        }
+        }*/
 
-        Dog *dog1 = [Dog dogWithName:@"billy" age:2 breed:@"Husky"];
-        [CACHE saveObject:dog1];
+        Dog *dog1 = [Dog dogWithName:@"billy2" age:2 breed:@"Husky"];
+         [CACHE saveObject:dog1 name:dog1.name];
 
-        CACHE.policyType = MMCPolicyTypeFIFO;
+        /*CACHE.policyType = MMCPolicyTypeFIFO;
 
         Dog *dog2 = [Dog dogWithName:@"lucas" age:3 breed:@"Barbet"];
-        [CACHE saveObject:dog2];
+         [CACHE saveObject:dog2 name:dog2.name];
 
         CACHE.policyType = MMCPolicyTypeLFU;
 
         Cat *cat1 = [Cat dogWithName:@"luna" age:1 breed:@"British Shorthair"];
-        [CACHE saveObject:cat1];
+         [CACHE saveObject:cat1 name:cat1.name];
 
         Cat *cat2 = [Cat dogWithName:@"benny" age:5 breed:@"Burmese"];
-        [CACHE saveObject:cat2];
+         [CACHE saveObject:cat2 name:cat2.name];
 
         for (NSInteger i = 0; i < 100; i++) {
             [CACHE saveObject:RandomDog()];
         }*/
     MMCPersistentStorage *a = MMCPersistentStorage.new;
-    NSLog(@"%ld", [a count]);
-        NSLog(@"");
-   
+    //NSLog(@"%@", [a objectForId:@"k"]);
+    [a showTable];
     
     return 0;
 }
