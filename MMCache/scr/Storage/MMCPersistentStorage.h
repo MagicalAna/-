@@ -12,12 +12,18 @@
 
 @interface MMCPersistentStorage : NSObject <MMCStorageProtocol>
 
--(sqlite3*)openDB;
--(void)createTable;
--(void)dropTable;
--(void)countPlus:(NSString*)id andAccessCount:(int)accessCount;
-- (NSDate *)getDateTimeFromMilliSeconds: (int) leftHalf andRightHalf: (int)rightHalf;
-- (int)getDateTimeTOMilliSeconds:(NSDate *)datetime andRightHalf:(int *)rightHalf;
+- (sqlite3 *)openDB;
+
+- (void)createTable;
+
+- (void)dropTable;
+
+- (void)countPlus: (NSString*)id;
+
+- (NSDate *)getDateTimeFromMilliSeconds: (NSString *) milliSeconds;
+
+- (NSString *)getDateTimeTOMilliSeconds: (NSDate *)date;
+
 - (void)showTable;
 
 @end
