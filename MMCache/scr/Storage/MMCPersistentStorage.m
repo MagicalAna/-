@@ -39,6 +39,7 @@ static int callback3(void *NotUsed, int argc, char **argv, char **azColName) {
     @synchronized(self) {
         sqlite3 *db;
         int rc;
+        char *zErrMsg = 0;
     
         rc = sqlite3_open("object.db", &db);
         if(rc != SQLITE_OK) {
@@ -46,6 +47,28 @@ static int callback3(void *NotUsed, int argc, char **argv, char **azColName) {
         } else {
             //NSLog(@"OPENDB SUCCESS");
         }
+        
+        char *sql = "SELECT * FROM sqlite_master WHERE type = 'table' and name = 'object'";
+        countNumber = 0;
+        rc = sqlite3_exec(db, sql, callback2, nil, &zErrMsg);
+        if (countNumber == 0) {
+            sql = "create table object("  \
+            "id text primary key    not null," \
+            "object         blob    not null," \
+            "added_time     text    not null," \
+            "access_time    text    not null," \
+            "level          int     not null," \
+            "duration       int     not null," \
+            "access_count   int     not null);";
+            
+            rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
+            if( rc != SQLITE_OK ) {
+                NSAssert(0, @"CREATE TABLE FAIL");
+            } else {
+                NSLog(@"CREATE TABLE SUCCESS");
+            }
+        }
+        
         return db;
     }
 }

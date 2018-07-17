@@ -45,8 +45,8 @@ int main(int argc, const char * argv[]) {
             [CACHE objectForId:allIds[index]];
         }*/
 
-        Dog *dog1 = [Dog dogWithName:@"billy2" age:2 breed:@"Husky"];
-         [CACHE saveObject:dog1 name:dog1.name];
+        /*Dog *dog1 = [Dog dogWithName:@"billy2" age:2 breed:@"Husky"];
+         [CACHE saveObject:dog1 name:dog1.name];*/
 
         /*CACHE.policyType = MMCPolicyTypeFIFO;
 
@@ -66,7 +66,7 @@ int main(int argc, const char * argv[]) {
         }*/
     MMCPersistentStorage *a = MMCPersistentStorage.new;
     //NSLog(@"%@", [a objectForId:@"k"]);
-    [a showTable];
+    [a openDB];
     
     return 0;
 }
