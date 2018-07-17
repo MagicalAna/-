@@ -35,8 +35,8 @@ Dog *RandomDog(void) {
 int main(int argc, const char * argv[]) {
         CACHE.storageType = MMCStorageTypePersistent;
         CACHE.policyType = MMCPolicyTypeLFU;
-        CACHE.capacity = 10000;
-        /*for (NSInteger i = 0; i < 10000; i++) {
+        CACHE.capacity = 5;
+        /*for (NSInteger i = 0; i < 5; i++) {
          Dog *randomDog = RandomDog();
          [CACHE saveObject: randomDog name: randomDog.name];
         }*/
@@ -45,8 +45,8 @@ int main(int argc, const char * argv[]) {
             [CACHE objectForId:allIds[index]];
         }*/
 
-        /*Dog *dog1 = [Dog dogWithName:@"billy2" age:2 breed:@"Husky"];
-         [CACHE saveObject:dog1 name:dog1.name];*/
+        Dog *dog1 = [Dog dogWithName:@"billy" age:2 breed:@"Husky"];
+        [CACHE saveObject:dog1 name:dog1.name];
 
         /*CACHE.policyType = MMCPolicyTypeFIFO;
 
@@ -65,8 +65,7 @@ int main(int argc, const char * argv[]) {
             [CACHE saveObject:RandomDog()];
         }*/
     MMCPersistentStorage *a = MMCPersistentStorage.new;
-    //NSLog(@"%@", [a objectForId:@"k"]);
-    [a openDB];
+    NSLog(@"%@", [a allIds]);
     
     return 0;
 }

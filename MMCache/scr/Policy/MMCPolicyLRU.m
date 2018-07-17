@@ -16,11 +16,18 @@
 
 - (BOOL)saveObject:(MMCContainer *)object toStorage:(id<MMCStorageProtocol>)storage maxCapacity:(NSInteger)maxCapacity {
     if (maxCapacity > 0 && [storage count] >= maxCapacity) {
-        MMCContainer *container = [storage leastAccessed];
-        if (container.id) {
-            if ([storage removeObjectForId:container.id]) {
-                NSLog(@"<LRU> FULL [%@ accessed at %@] was removed", container.object, container.accessTime);
+        if ([storage saveObject:object]){
+            [storage removeObjectForId: object.id];
+            MMCContainer *container = [storage leastAccessed];
+            if (container.id) {
+                if ([storage removeObjectForId:container.id]) {
+                    NSLog(@"<LRU> FULL [%@ accessed at %@] was removed", container.object, container.accessTime);
+                }
+            } else {
+                return [storage saveObject:object];
             }
+        } else {
+            return NO;
         }
     }
     return [storage saveObject:object];

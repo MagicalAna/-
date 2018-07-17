@@ -68,7 +68,6 @@ static int callback3(void *NotUsed, int argc, char **argv, char **azColName) {
                 NSLog(@"CREATE TABLE SUCCESS");
             }
         }
-        
         return db;
     }
 }
@@ -247,6 +246,7 @@ static int callback3(void *NotUsed, int argc, char **argv, char **azColName) {
             } else {
                 //NSLog(@"%s",sqlite3_errmsg(db));
                 NSLog(@"重复名字，输入失败");
+                return NO;
             }
         }
         sqlite3_close(db);
@@ -270,7 +270,7 @@ static int callback3(void *NotUsed, int argc, char **argv, char **azColName) {
         }
         sqlite3_close(db);
     }
-    return countNumber;
+    return countNumber - 1;
 }
 
 - (MMCContainer *)objectForId: (NSString *)id {
